@@ -187,6 +187,11 @@ img {
 .d-button {
   background-color: var(--color-d);
 }
+.button-img {
+   margin: 5px;
+   height: 35px;
+   weight: 35px;
+}
 
 @media (max-width: 767px) {
   .container {
