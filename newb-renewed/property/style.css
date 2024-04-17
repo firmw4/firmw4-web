@@ -167,6 +167,7 @@ body {
   font-weight: normal;
   text-align: left;
   margin: auto 10px 20px;
+  overflow-wrap: break-word;
 }
 .social {
   display: block;
