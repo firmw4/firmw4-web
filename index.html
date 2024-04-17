@@ -29,6 +29,12 @@
    <link rel="manifest" href="property/site.webmanifest">
 </head>
 <body>
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault()); // Mencegah klik kanan
+    document.addEventListener('copy', event => event.preventDefault()); // Mencegah salin dengan Ctrl+C
+    document.addEventListener('cut', event => event.preventDefault()); // Mencegah potong dengan Ctrl+X
+    document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
+</script>
   <div class="header">
      <div class="top">
         <a href="#">firmw4</a>

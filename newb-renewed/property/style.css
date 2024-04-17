@@ -1,6 +1,6 @@
 :root {
   --accent: rgb(170, 200, 255);
-  --gradient1: #8ac8ff;
+  --gradient1: #ededed;
   --gradient2: #f7fbff;
   --header: rgb(30, 30, 40);
   --container: #ffffff;
@@ -20,12 +20,14 @@
     position: static;
   }
   .container,
+  .img-container,
   .button-container {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 75px auto;
   }
+  .img-container,
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr));
@@ -70,7 +72,7 @@
   position: static;
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px 0 10px;
+  padding: 0px 10px 0 10px;
   background-color: var(--header);
   color: var(--text-con);
   text-align: center;
@@ -143,21 +145,32 @@ body {
 }
 
 .container,
+.img-container,
 .click-container {
   font-size: 18px;
   font-family: Arial, Sans-Serif;
-  width: 80%;
-  max-width: 1200px;
   background-color: var(--container);
-  margin: 75px auto;
   padding: 10px 20px 10px;
   border-radius: 8px;
   border: 2px solid black;
 }
+.container {
+  width: 80%;
+  max-width: 600px;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
 .click-container {
+  width: 80%;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
+
 .subtitle {
   font-size: 22px;
   text-align: left;
@@ -176,8 +189,8 @@ body {
 .img-item {
   margin: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 img {
   max-width: 100%;
@@ -242,9 +255,18 @@ img {
 }
 
 @media (max-width: 767px) {
+  .img-container,
   .container {
     display: block;
     width: 80%;
+    margin: 75px auto;
+  }
+  .img-container {
+    
+  }
+  .img-item {
+    display: block;
+    margin: 20px auto;
   }
   .mobile-content {
     display: block;
