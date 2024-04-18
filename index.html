@@ -14,7 +14,7 @@
    <meta property="og:url" content="https://firmw4.github.io/">
    
    <!-- fonts -->
-   <link rel="stylesheet" href="property/style.css">
+   <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,27 +23,27 @@
    <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
    
    <!-- favicon -->
-   <link rel="apple-touch-icon" sizes="180x180" href="property/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="property/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="property/favicon-16x16.png">
-   <link rel="manifest" href="property/site.webmanifest">
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+
 <script>
-    document.addEventListener('contextmenu', event => event.preventDefault()); // Mencegah klik kanan
-    document.addEventListener('copy', event => event.preventDefault()); // Mencegah salin dengan Ctrl+C
-    document.addEventListener('cut', event => event.preventDefault()); // Mencegah potong dengan Ctrl+X
-    document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
+  document.addEventListener('contextmenu', event => event.preventDefault()); // Mencegah klik kanan
+  document.addEventListener('copy', event => event.preventDefault()); // Mencegah salin dengan Ctrl+C
+  document.addEventListener('cut', event => event.preventDefault()); // Mencegah potong dengan Ctrl+X
+  document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
 </script>
+
   <div class="header">
-     <div class="top">
-        <a href="#">firmw4</a>
-     </div>
-     
-     <div class="topnav">
-        <a href="#photos">photos</a>
-        <a href="#projects">projects</a>
-     </div>
+    <div class="top">firmw4</div>
+    
+    <div class="topnav">
+      <a href="#photos">photos</a>
+      <a href="#projects">projects</a>
+  </div>
   </div>
   
   <p>
@@ -53,50 +53,68 @@
   
   <article>
      <div class="container">
+       <div class="sub-container">
         <p class="subtitle">About me</p>
+       </div>
+       <div class="sub-container">
         <p class="text">I'm Zakky, a software engineering student and photography enthusiast<br>here you can see some of my projects and photos.</p>
+       </div>
+       <div class="sub-container">
         <div class="social">
            <a href="https://github.com/firmw4"><img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/Github.svg" alt="Github" class="button-img"></a>
            <a href="https://www.facebook.com/firmw4?"><img src="https://github.com/gauravghongde/social-icons/raw/master/SVG/Color/Facebook.svg" alt="Facebook" class="button-img"></a>
            <a href="https://t.me/firmw4"><img src="https://github.com/gauravghongde/social-icons/raw/master/SVG/Color/Telegram.svg" alt="Telegram" class="button-img"></a>
          </div>
+       </div>
       </div>
   </article>
   
   <section id="photos">
   <article>
-     <div class="container">
+    <div class="container">
+      <div class="sub-container">
         <p class="subtitle">Iguana</p>
-           <div class="img-item">
-              <img src="images/sample_1.jpg" alt="Image 1">
-           </div>
-           <div class="img-item">
-              <img src="images/sample_2.jpg" alt="Image 2">
-           </div>
-           <div class="img-item">
-              <img src="images/sample_3.jpg" alt="Image 3">
-           </div>
-           <div class="img-item">
-              <img src="images/sample_4.jpg" alt="Image 4">
-           </div>
-     </div>
+      </div>
+      <div class="img-container">
+        <div class="img-item">
+          <img src="images/sample_1.jpg" alt="Image 1">
+        </div>
+        <div class="img-item">
+          <img src="images/sample_2.jpg" alt="Image 2">
+          </div>
+      </div>
+      <div class="img-container">
+        <div class="img-item">
+          <img src="images/sample_3.jpg" alt="Image 3">
+        </div>
+        <div class="img-item">
+          <img src="images/sample_4.jpg" alt="Image 4">
+        </div>
+      </div>
+    </div>
   </article>
   </section>
   
   <section id="projects">
   <article>
-     <div class="click-container" onclick="location.href='newb-renewed/index.html'">
+    <div class="click-container" onclick="location.href='newb-renewed/index.html'">
+      <div class="sub-container">
         <p class="subtitle">Newb Renewed</p>
+      </div>
+      <div class="sub-container">
         <p class="text">A shader with soft lighting and better fog<br>Ported from Newb X Legacy</p>
+      </div>
+      <div class="sub-container">
         <div class="img-item">
-           <img src="newb-renewed/images/screenshot_3.jpg">
+          <img src="newb-renewed/images/screenshot_3.jpg">
         </div>
-     </div>
+      </div>
+    </div>
   </article>
   </section>
   
-  <footer></footer>
-      <p align="center">Copyright &copy; 2024 Firmw4</p>
+  <footer>
+    <p align="center">Copyright &copy; 2024 Firmw4</p>
   </footer>
   
 </body>
