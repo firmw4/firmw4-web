@@ -1,18 +1,18 @@
 /* Root Variables */
 :root {
-  --accent1: #3d8eff;
-  --accent2: #7ccdfc;
-  --gradient1: #ededed;
-  --gradient2: #f7fbff;
-  --container: #ffffff;
+  --accent1: #222831;
+  --accent2: #31363F;
+  --gradient1: #EEEEEE;
+  --gradient2: #EEEEf0;
+  --container: #FFFFFF;
   --text-head: rgba(245, 245, 255, 0.8);
   --text-body: #000000;
-  --text-cont: #0d0d0d;
+  --text-cont: #0D0D0D;
   --color-a: #78C252;
   --color-b: #00A4EF;
-  --color-c: #f78686;
-  --color-d: #595959;
-  --line: #3c4873;
+  --color-c: #F78686;
+  --color-d: #76ABAE;
+  --line: #3C4873;
   --border: ;
   --alpha: rgba(100, 100, 100, 0.2);
 }

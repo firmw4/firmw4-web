@@ -2,17 +2,17 @@
 :root {
   --accent1: #940cc9;
   --accent2: #dd2bed;
-  --gradient1: #ededed;
-  --gradient2: #f7fbff;
-  --container: #ffffff;
+  --gradient1: #EEEEEE;
+  --gradient2: #EEEEf0;
+  --container: #FFFFFF;
   --text-head: rgba(245, 245, 255, 0.8);
   --text-body: #000000;
   --text-cont: #0d0d0d;
   --color-a: #78C252;
   --color-b: #00A4EF;
   --color-c: #f78686;
-  --color-d: #595959;
-  --color-e: #ae2bcd;
+  --color-d: #3B3B3B;
+  --color-e: #D757EB;
   --line: #3c4873;
   --border: ;
   --alpha: rgba(200, 200, 200, 0.4);
