@@ -24,88 +24,113 @@
   document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
 </script>
 
-  <div class="header">
-    <div class="top">Newb Remaining</div>
-    
-    <div class="topnav">
-      <a href="#downloads">Downloads</a>
+<div class="header">
+  <div class="top">Newb Remaining</div>
+  
+  <div class="topnav">
+    <a href="#downloads">Downloads</a>
+  </div>
+</div>
+
+<article>
+  <div class="container">
+    <div class="sub-container">
+      <p class="subtitle">Important!</p>
+    </div>
+    <div class="sub-container">
+      <p class="text">Shaders are not officially supported on Minecraft Bedrock. The following are unofficial ways to load shaders. <a href="../installation.html">Read installation guide.</a></p>
     </div>
   </div>
-  
-  <article>
-    <div class="container">
-      <div class="sub-container">
-        <p class="subtitle">Important!</p>
-      </div>
-      <div class="sub-container">
-        <p class="text">Shaders are not officially supported on Minecraft Bedrock. The following are unofficial ways to load shaders. <a href="../installation.html">Read installation guide.</a></p>
-      </div>
-    </div>
-  </article>
-  
+</article>
+
+<div id="detailContainer"></div>
+
+<script>
+// Ambil ID dari URL
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
+
+// Cek ID dan tampilkan informasi sesuai ID
+if (id === 'uwu') {
+  document.getElementById('detailContainer').innerHTML = `
+  <div class="img-item">
+    <img src="images/new_logo.png">
+  </div>
+  `;
+} else if (id === 'notuwu') {
+  document.getElementById('detailContainer').innerHTML = `
   <div class="img-item">
     <img src="images/logo.png">
   </div>
-  
-  <section id="downloads">
-    <article>
-      <div class="container">
-        <div class="sub-container">
-          <p class="subtitle">Downloads</p>
-          </div>
-        <div class="sub-container">
-          <p class="text">Download this shader to provide soft colors and lighting visuals in Minecraft. Delivers a better adventure experience than vanilla shaders.</p>
-          <a href="/test.html" class="a-button">Download for Android</a>
-          <a href="/test.html" class="b-button">Download for Windows</a>
-          <a href="/test.html" class="c-button">Download all Packs</a>
-          <a href="monetize.html" class="d-button">If you want to support me :)</a>
-        </div>
-      </div>
-  </article>
-  </section>
-  
+  `;
+} else {
+  document.getElementById('detailContainer').innerHTML = `
+  <div class="img-item">
+    <img src="images/logo.png">
+  </div>
+  `;
+}
+</script>
+
+<section id="downloads">
   <article>
     <div class="container">
       <div class="sub-container">
-        <p class="subtitle">Changelogs</p>
+        <p class="subtitle">Downloads</p>
       </div>
       <div class="sub-container">
-        <a href="https://github.com/firmw4/newb-remaining/commits/main/" class="d-button">Github</a>
-        <a href="https://discord.com/channels/844591537430069279/1200711882013691916" class="e-button">Source</a>
-      </div>
-      <div class="sub-container">
-        <p class="subtitle">Screenshots</p>
-      </div>
-      <div class="img-container">
-        <div class="img-item">
-          <img src="images/screenshot_1.jpg">
-        </div>
-        <div class="img-item">
-          <img src="images/screenshot_2.jpg">
-        </div>
-      </div>
-      <div class="img-container">
-        <div class="img-item">
-          <img src="images/screenshot_3.jpg">
-        </div>
-        <div class="img-item">
-          <img src="images/screenshot_4.jpg">
-        </div>
-      </div>
-      <div class="img-container">
-        <div class="img-item">
-          <img src="images/screenshot_5.jpg">
-        </div>
-        <div class="img-item">
-          <img src="images/screenshot_6.jpg">
-        </div>
+        <p class="text">Download this shader to provide soft colors and lighting visuals in Minecraft. Delivers a better adventure experience than vanilla shaders.</p>
+        <a href="/test.html" class="a-button">Download for Android</a>
+        <a href="/test.html" class="b-button">Download for Windows</a>
+        <a href="/test.html" class="c-button">Download all Packs</a>
+        <a href="monetize.html" class="d-button">If you want to support me :)</a>
       </div>
     </div>
   </article>
-   
+</section>
+
+<article>
+  <div class="container">
+    <div class="sub-container">
+      <p class="subtitle">Changelogs</p>
+    </div>
+    <div class="sub-container">
+      <a href="https://github.com/firmw4/newb-remaining/commits/main/" class="d-button">Github</a>
+      <a href="https://discord.com/channels/844591537430069279/1200711882013691916" class="e-button">Source</a>
+    </div>
+    <div class="sub-container">
+      <p class="subtitle">Screenshots</p>
+    </div>
+    <div class="img-container">
+      <div class="img-item">
+        <img src="images/screenshot_1.jpg">
+      </div>
+      <div class="img-item">
+        <img src="images/screenshot_2.jpg">
+      </div>
+    </div>
+    <div class="img-container">
+      <div class="img-item">
+        <img src="images/screenshot_3.jpg">
+      </div>
+      <div class="img-item">
+        <img src="images/screenshot_4.jpg">
+      </div>
+    </div>
+    <div class="img-container">
+      <div class="img-item">
+        <img src="images/screenshot_5.jpg">
+      </div>
+      <div class="img-item">
+        <img src="images/screenshot_6.jpg">
+      </div>
+    </div>
+  </div>
+</article>
+
 <footer>
-    <p align="center">Copyright &copy; 2024 Firmw4</p>
-  </footer>
-  
+  <p align="center">Copyright &copy; 2024 Firmw4</p>
+</footer>
+
 </body>
 </html>
