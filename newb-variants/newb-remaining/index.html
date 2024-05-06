@@ -7,7 +7,7 @@
    <title>Newb Remaining</title>
    
    <!-- fonts -->
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="/css/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,15 +22,37 @@
   document.addEventListener('copy', event => event.preventDefault()); // Mencegah salin dengan Ctrl+C
   document.addEventListener('cut', event => event.preventDefault()); // Mencegah potong dengan Ctrl+X
   document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get('id');
 </script>
 
-<div class="header">
-  <div class="top">Newb Remaining</div>
+<div id="headerUwU"></div>
   
-  <div class="topnav">
-    <a href="#downloads">Downloads</a>
+<script>
+  if (id === 'uwu') {
+  document.getElementById('headerUwU').innerHTML = `
+  <div class="header-remaining">
+    <div class="top">Newb Pineapple</div>
+    
+    <div class="topnav">
+      <a href="#downloads">Downloads</a>
+    </div>
   </div>
-</div>
+  `;
+} else {
+  document.getElementById('headerUwU').innerHTML = `
+  <div class="header-remaining">
+    <div class="top">Newb Remaining</div>
+    
+    <div class="topnav">
+      <a href="#downloads">Downloads</a>
+    </div>
+  </div>
+  `;
+}
+</script>
+
 
 <article>
   <div class="container">
@@ -43,30 +65,18 @@
   </div>
 </article>
 
-<div id="detailContainer"></div>
+<div id="logoUwU"></div>
 
-<script>
-// Ambil ID dari URL
-const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get('id');
-
-// Cek ID dan tampilkan informasi sesuai ID
-if (id === 'uwu') {
-  document.getElementById('detailContainer').innerHTML = `
+<script>if (id === 'uwu') {
+  document.getElementById('logoUwU').innerHTML = `
   <div class="img-item">
-    <img src="images/new_logo.png">
-  </div>
-  `;
-} else if (id === 'notuwu') {
-  document.getElementById('detailContainer').innerHTML = `
-  <div class="img-item">
-    <img src="images/logo.png">
+    <img src="/images/logo_remaining_uwu.png">
   </div>
   `;
 } else {
-  document.getElementById('detailContainer').innerHTML = `
+  document.getElementById('logoUwU').innerHTML = `
   <div class="img-item">
-    <img src="images/logo.png">
+    <img src="/images/logo_remaining.png">
   </div>
   `;
 }
@@ -96,37 +106,55 @@ if (id === 'uwu') {
     </div>
     <div class="sub-container">
       <a href="https://github.com/firmw4/newb-remaining/commits/main/" class="d-button">Github</a>
-      <a href="https://discord.com/channels/844591537430069279/1200711882013691916" class="e-button">Source</a>
+      <a href="https://discord.com/channels/844591537430069279/1200711882013691916" class="f-button">Source</a>
     </div>
     <div class="sub-container">
       <p class="subtitle">Screenshots</p>
     </div>
     <div class="img-container">
       <div class="img-item">
-        <img src="images/screenshot_1.jpg">
+        <img src="/images/screenshot_7.jpg">
       </div>
       <div class="img-item">
-        <img src="images/screenshot_2.jpg">
-      </div>
-    </div>
-    <div class="img-container">
-      <div class="img-item">
-        <img src="images/screenshot_3.jpg">
-      </div>
-      <div class="img-item">
-        <img src="images/screenshot_4.jpg">
+        <img src="/images/screenshot_8.jpg">
       </div>
     </div>
     <div class="img-container">
       <div class="img-item">
-        <img src="images/screenshot_5.jpg">
+        <img src="/images/screenshot_9.jpg">
       </div>
       <div class="img-item">
-        <img src="images/screenshot_6.jpg">
+        <img src="/images/screenshot_10.jpg">
+      </div>
+    </div>
+    <div class="img-container">
+      <div class="img-item">
+        <img src="/images/screenshot_11.jpg">
+      </div>
+      <div class="img-item">
+        <img src="/images/screenshot_12.jpg">
       </div>
     </div>
   </div>
 </article>
+
+<div id="buttonUwU"></div>
+
+<script>
+  if (id === 'uwu') {
+  document.getElementById('buttonUwU').innerHTML = `
+  <div class="container">
+    <a href="index.html" class="f-button">Remaining</a>
+  </div>
+  `;
+} else {
+  document.getElementById('buttonUwU').innerHTML = `
+  <div class="container">
+    <a href="index.html?id=uwu" class="f-button">Pineapple</a>
+  </div>
+  `;
+}
+</script>
 
 <footer>
   <p align="center">Copyright &copy; 2024 Firmw4</p>
