@@ -124,6 +124,11 @@ img {
   flex-wrap: wrap;
   margin: 20px;
   justify-content: space-around;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.img-item:hover {
+  transform: scale(1.1);
 }
 .social {
   display: block;
@@ -162,11 +167,6 @@ img {
   max-width: 1200px;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.img-container:hover {
-  transform: scale(1.1);
 }
 .click-container {
   width: 100%;
