@@ -162,12 +162,17 @@ img {
   max-width: 1200px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.img-container:hover {
+  transform: scale(1.1);
 }
 .click-container {
   width: 100%;
   max-width: 1200px;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .click-container:hover {
   transform: scale(1.03);
