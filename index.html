@@ -23,13 +23,15 @@
 </head>
 <body>
 
+<!-- prevent right click and copy content -->
 <script>
-  document.addEventListener('contextmenu', event => event.preventDefault()); // Mencegah klik kanan
-  document.addEventListener('copy', event => event.preventDefault()); // Mencegah salin dengan Ctrl+C
-  document.addEventListener('cut', event => event.preventDefault()); // Mencegah potong dengan Ctrl+X
-  document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('copy', event => event.preventDefault());
+  document.addEventListener('cut', event => event.preventDefault());
+  document.addEventListener('selectstart', event => event.preventDefault());
 </script>
 
+  <!-- header -->
   <div class="header">
     <div class="top">firmw4</div>
     
@@ -39,6 +41,7 @@
   </div>
   </div>
   
+  <!-- content -->
   <p>
      <div class="title">Zakky Firmansyah</div>
      <div class="quote">Photographer and Programmer</div>
@@ -54,9 +57,9 @@
        </div>
        <div class="sub-container">
         <div class="social">
-           <a href="/redirect/github.html"><img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/Github.svg" alt="Github" class="button-img"></a>
-           <a href="/redirect/facebook.html"><img src="https://github.com/gauravghongde/social-icons/raw/master/SVG/Color/Facebook.svg" alt="Facebook" class="button-img"></a>
-           <a href="/redirect/discord.html"><img src="https://github.com/gauravghongde/social-icons/raw/master/SVG/Color/Discord.svg" alt="Telegram" class="button-img"></a>
+           <a href="/redirect/github.html"><img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Black/Github_black.svg" alt="Github" class="button-img"></a>
+           <a href="/redirect/facebook.html"><img src="https://github.com/gauravghongde/social-icons/raw/master/SVG/Black/Facebook_black.svg" alt="Facebook" class="button-img"></a>
+           <a href="/redirect/discord.html"><img src="https://github.com/gauravghongde/social-icons/raw/master/SVG/Black/Discord_black.svg" alt="Telegram" class="button-img"></a>
          </div>
        </div>
       </div>
@@ -108,6 +111,7 @@
   </article>
   </section>
   
+  <!-- footer -->
   <footer>
     <p align="center">Copyright &copy; 2024 Firmw4</p>
   </footer>

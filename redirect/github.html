@@ -15,21 +15,45 @@
    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
    
-   <meta http-equiv="refresh" content="0; url=https://github.com/firmw4" />
+   <meta http-equiv="refresh" content="3; url=https://github.com/firmw4" />
+   
+   <!-- function to update the countdown timer -->
+    <script type="text/javascript">
+        function startCountdown(seconds) {
+            var counter = seconds;
+            var countdownElement = document.getElementById('countdown');
+            
+            var interval = setInterval(function() {
+                countdownElement.textContent = counter;
+                counter--;
+
+                if (counter < 0) {
+                    clearInterval(interval);
+                }
+            }, 1000);
+        }
+
+        window.onload = function() {
+            startCountdown(3);
+        }
+    </script>
+    
 </head>
 
 <body>
-  
+
+<!-- prevent right click and copy content -->
 <script>
-  document.addEventListener('contextmenu', event => event.preventDefault()); // Mencegah klik kanan
-  document.addEventListener('copy', event => event.preventDefault()); // Mencegah salin dengan Ctrl+C
-  document.addEventListener('cut', event => event.preventDefault()); // Mencegah potong dengan Ctrl+X
-  document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('copy', event => event.preventDefault());
+  document.addEventListener('cut', event => event.preventDefault());
+  document.addEventListener('selectstart', event => event.preventDefault());
 </script>
   
-  <div class="click-container" onclick="location.href='https://github.com/firmw4'">
+  <!-- body -->
+  <div class="container">
     <div class="sub-container">
-      <p class="text">If you are not redirected, click here.</p>
+    <p>You will be redirected in <span id="countdown">3</span> seconds. If you are not redirected, <a href="https://github.com/firmw4">click here</a>.</p>
     </div>
   </div>
   

@@ -17,13 +17,15 @@
 </head>
 <body>
 
+<!-- prevent right click and copy content -->
 <script>
-  document.addEventListener('contextmenu', event => event.preventDefault()); // Mencegah klik kanan
-  document.addEventListener('copy', event => event.preventDefault()); // Mencegah salin dengan Ctrl+C
-  document.addEventListener('cut', event => event.preventDefault()); // Mencegah potong dengan Ctrl+X
-  document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('copy', event => event.preventDefault());
+  document.addEventListener('cut', event => event.preventDefault());
+  document.addEventListener('selectstart', event => event.preventDefault());
 </script>
-
+  
+  <!-- header -->
   <div class="header">
     <div class="top">Newb Customitazion</div>
   </div>
@@ -37,10 +39,11 @@
     </div>
   </div>
   
+  <!-- body -->
   <article>
     <div class="click-container" onclick="location.href='newb-remaining/index.html?id=uwu'">
       <div class="sub-container">
-        <p class="subtitle">Newb Remaining</p>
+        <p class="subtitle">Newb <s>Remaining</s> x Pineapple</p>
       </div>
       <div class="img-container">
          <img src="/images/screenshot_11.jpg" alt="Remaining">
@@ -58,7 +61,8 @@
       </div>
     </div>
   </article>
-   
+  
+  <!-- footer -->
   <footer>
     <p align="center">Copyright &copy; 2024 Firmw4</p>
   </footer>

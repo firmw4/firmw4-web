@@ -17,14 +17,16 @@
    
 </head>
 <body>
-  
-<script>
-  document.addEventListener('contextmenu', event => event.preventDefault()); // Mencegah klik kanan
-  document.addEventListener('copy', event => event.preventDefault()); // Mencegah salin dengan Ctrl+C
-  document.addEventListener('cut', event => event.preventDefault()); // Mencegah potong dengan Ctrl+X
-  document.addEventListener('selectstart', event => event.preventDefault()); // Mencegah pemilihan teks
-</script>
 
+<!-- prevent right click and copy content -->
+<script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('copy', event => event.preventDefault());
+  document.addEventListener('cut', event => event.preventDefault());
+  document.addEventListener('selectstart', event => event.preventDefault());
+</script>
+  
+  <!-- header -->
   <div class="header-oth">
     <div class="top">Newb Renewed</div>
     
@@ -33,6 +35,7 @@
     </div>
   </div>
   
+  <!-- body -->
   <section id="downloads">
   <article>
     <div class="container">
@@ -70,6 +73,7 @@
   </article>
   </section>
   
+  <!-- footer -->
   <footer>
     <p align="center">Copyright &copy; 2024 Firmw4</p>
   </footer>
