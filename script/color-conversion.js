@@ -148,13 +148,13 @@ function convert() {
         showInvalidMessage('Invalid input format');
     }
 }
-/*
+
 document.getElementById('colorPicker').addEventListener('input', (event) => {
     const hex = event.target.value;
     document.getElementById('inputField').value = hex;
     convertHexToGLSL(hex);
 });
-*/
+
 function copyToClipboard(id) {
     const text = document.getElementById(id).innerText;
     navigator.clipboard.writeText(text).then(() => {
