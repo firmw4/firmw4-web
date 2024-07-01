@@ -4,25 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Palette</title>
+    
+   <!-- fonts -->
     <link rel="stylesheet" href="/style/converter.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+   
+   <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+    <article>
     <div class="container">
-        <h1>Color Palette and HEX to GLSL Converters</h1>
-        <div class="color-preview" id="colorPreview">
-            <input type="color" id="colorPicker" value="#000000"/>
-            <img src="/images/palette-icon.png" class="palette-icon" alt="Palette Icon">
+        <div class="sub-container">
+            <p class="title">Color Palette</p>
         </div>
-        <div class="input-container">
-            <input type="text" id="inputField" placeholder="Enter HEX or GLSL code" value="#000000"/>
-            <button class="button" onclick="convert()">Convert</button>
+        <div class="sub-container">
+            <div class="color-preview" id="colorPreview">
+                <input type="color" id="colorPicker" value="#000000"/>
+                <img src="/images/palette-icon.png" class="palette-icon" alt="Palette Icon">
+            </div>
+            <div class="input-container">
+                <input type="text" id="inputField" placeholder="Enter HEX or GLSL code" value="#000000"/>
+                <button class="button" onclick="convert()">Convert</button>
+            </div>
         </div>
-        <p class="text">Result: </p>
-        <div class="result" id="result" onclick="copyToClipboard()"></div>
-    </div>
-    <div class="popup" id="popup">
+        <div class="sub-container">
+            <p class="subtitle">Hex and GLSL conversion</p>
+            <p class="text">Result: </p>
+            <div class="result" id="result" onclick="copyToClipboard()"></div>
+        </div>
+        <div class="popup" id="popup">
         <div class="popup-content" id="popupContent"></div>
     </div>
+    </article>
+    
     <script src="/script/converter.js"></script>
+    
+  <!-- footer -->
+  <footer>
+    <p align="center">Copyright &copy; 2024 Firmw4</p>
+  </footer>
+  
 </body>
 </html>

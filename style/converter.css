@@ -29,21 +29,41 @@ body {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+}
+
+.title {
+  font-size: 38px;
+  text-align: center;
+  font-family: 'Merriweather Sans';
+}
+.subtitle {
+  font-size: 22px;
+  text-align: left;
+  font-family: 'Merriweather Sans';
+}
+.text {
+  margin: auto 10px 20px;
+  overflow-wrap: break-word;
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Lunasima';
 }
 
 .container {
+  color: var(--text-cont);
   background-color: var(--container);
-  padding: 20px;
+  margin: 75px auto;
+  padding: 10px 20px 10px;
+  font-size: 18px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 80%;
-  width: 100%;
   border: 2px solid black;
+  max-width: 80%;
+}
+
+.sub-container {
+  color: var(--text-cont);
+  background-color: var(--container);
+  margin: 0;
 }
 
 .input-container {
