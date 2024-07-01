@@ -21,24 +21,61 @@
    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+
+<!-- prevent right click and copy content -->
+<script>
+// Mencegah klik kanan di seluruh halaman
+document.addEventListener('contextmenu', function(event) {
+    // Cek apakah elemen target memiliki kelas 'allow-right-click'
+    if (!event.target.classList.contains('allow-right-click')) {
+        event.preventDefault();
+    }
+});
+
+// Mencegah pemotongan (cut) di seluruh halaman
+document.addEventListener('cut', function(event) {
+    // Cek apakah elemen target memiliki kelas 'allow-right-click'
+    if (!event.target.classList.contains('allow-right-click')) {
+        event.preventDefault();
+    }
+});
+
+// Mencegah penyalinan (copy) di seluruh halaman
+document.addEventListener('copy', function(event) {
+    // Cek apakah elemen target memiliki kelas 'allow-right-click'
+    if (!event.target.classList.contains('allow-right-click')) {
+        event.preventDefault();
+    }
+});
+
+// Mencegah pemilihan teks (selectstart) di seluruh halaman
+document.addEventListener('selectstart', function(event) {
+    // Cek apakah elemen target memiliki kelas 'allow-right-click'
+    if (!event.target.classList.contains('allow-right-click')) {
+        event.preventDefault();
+    }
+});
+</script>
+
+  <!-- header -->
+  <div class="header">
+    <div class="top">Color Palette</div>
+  </div>
+  
     <article>
     <div class="container">
         <div class="sub-container">
-            <p class="title">Color Palette</p>
-        </div>
-        <div class="sub-container">
             <div class="color-preview" id="colorPreview">
-                <input type="color" id="colorPicker" value="#000000"/>
+                <input type="color" class="allow-right-click" id="colorPicker"/>
                 <img src="/images/palette-icon.png" class="palette-icon" alt="Palette Icon">
             </div>
             <div class="input-container">
-                <input type="text" id="inputField" placeholder="Enter HEX or GLSL code" value="#000000"/>
+                <input type="code" class="allow-right-click" id="inputField" placeholder="Enter HEX, GLSL, HSV or RGB code"/>
                 <button class="button" onclick="convert()">Convert</button>
             </div>
         </div>
         <div class="sub-container">
-            <p class="subtitle">Hex and GLSL conversion</p>
-            <p class="text">Result: </p>
+            <p class="subtitle">Result</p>
             <div class="result" id="result" onclick="copyToClipboard()"></div>
         </div>
         <div class="popup" id="popup">
@@ -46,7 +83,7 @@
     </div>
     </article>
     
-    <script src="/script/converter.js"></script>
+    <script src="/script/color-conversion.js"></script>
     
   <!-- footer -->
   <footer>
