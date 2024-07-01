@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <link rel="stylesheet" href="/style/converter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Palette and HEX to GLSL Converters</h1>
+        <div class="color-preview" id="colorPreview">
+            <input type="color" id="colorPicker" value="#000000"/>
+            <img src="/images/palette-icon.png" class="palette-icon" alt="Palette Icon">
+        </div>
+        <div class="input-container">
+            <input type="text" id="inputField" placeholder="Enter HEX or GLSL code" value="#000000"/>
+            <button class="button" onclick="convert()">Convert</button>
+        </div>
+        <p class="text">Result: </p>
+        <div class="result" id="result" onclick="copyToClipboard()"></div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popupContent"></div>
+    </div>
+    <script src="/script/converter.js"></script>
+</body>
+</html>
