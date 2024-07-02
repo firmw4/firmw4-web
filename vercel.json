@@ -10,6 +10,9 @@
     },
       "source": "/color-picker/index.html",
       "destination": "/color-picker"
-  ],
+  ]
+}
+
+{
   "trailingSlash": false
 }
