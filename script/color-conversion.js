@@ -123,14 +123,7 @@ function convertGLSLToHex(glsl) {
     const b = Math.round(parseFloat(match[3]) * 255);
 
     const hex = rgbToHex(r, g, b);
-    document.getElementById('result').innerHTML = `
-        <p onclick="copyToClipboard('hex')"><code id="hex">${hex}</code></p>
-        <p onclick="copyToClipboard('vec3')"><code id="vec3">${vec3}</code></p>
-        <p onclick="copyToClipboard('rgb')"><code id="rgb">${rgbString}</code></p>
-        <p onclick="copyToClipboard('hsv')"><code id="hsv">${hsvString}</code></p>
-    `;
-    document.getElementById('colorPreview').style.backgroundColor = hex;
-    document.getElementById('colorPicker').value = hex;
+    convertHexToGLSL(hex);
 }
 
 function convert() {
@@ -155,6 +148,10 @@ document.getElementById('colorPicker').addEventListener('input', (event) => {
     convertHexToGLSL(hex);
 });
 
+document.getElementById('inputField').addEventListener('input', () => {
+    convert();
+});
+
 function copyToClipboard(id) {
     const text = document.getElementById(id).innerText;
     navigator.clipboard.writeText(text).then(() => {
@@ -163,11 +160,6 @@ function copyToClipboard(id) {
 }
 
 function showInvalidMessage(message) {
-    const invalidMessage = document.getElementById('invalidMessage');
-    invalidMessage.innerText = message;
-    invalidMessage.style.display = 'block';
-
-    setTimeout(() => {
-        invalidMessage.style.display = 'none';
-    }, 3000);
+    const resultContainer = document.getElementById('result');
+    resultContainer.innerHTML = `<p>${message}</p>`;
 }

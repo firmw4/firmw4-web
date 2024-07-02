@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Palette</title>
+    <title>Color Picker</title>
     
    <!-- fonts -->
     <link rel="stylesheet" href="/style/converter.css">
@@ -59,23 +59,26 @@ document.addEventListener('selectstart', function(event) {
 
   <!-- header -->
   <div class="header">
-    <div class="top">Color Palette</div>
+    <div class="top">Color Picker</div>
   </div>
   
     <article>
     <div class="container">
         <div class="sub-container">
+            <p class="subtitle">Color Picker</p>
+            <p class="text">Input code or pick the color</p>
+        </div>
+        <div class="sub-container">
             <div class="color-preview" id="colorPreview">
-                <input type="color" class="allow-right-click" id="colorPicker" value="#000000"/>
-                <img src="/images/palette-icon.png" class="palette-icon" alt="Palette Icon">
+                <input type="color" id="colorPicker" value="#ffffff"/>
+                <img src="/images/palette-icon.svg" class="palette-icon" alt="Palette Icon">
             </div>
             <div class="input-container">
-                <input type="code" class="allow-right-click" id="inputField" placeholder="Enter HEX, GLSL, HSV or RGB code"/>
-                <button class="button" onclick="convert()">Convert</button>
+                <input type="text" class="allow-right-click" id="inputField" placeholder="Enter HEX, GLSL, HSV or RGB code"/>
+                <!-- <button class="button" onclick="convert()">Convert</button> -->
             </div>
         </div>
         <div class="sub-container">
-            <p class="subtitle">Result</p>
             <div class="result" id="result" onclick="copyToClipboard()"></div>
         </div>
         <div class="popup" id="popup">
