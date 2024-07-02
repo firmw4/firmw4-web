@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/index.html",
+      "destination": "/"
+    },
+    {
+      "source": "/minecraft-shaders/index.html",
+      "destination": "/minecraft-shaders"
+    }
+      "source": "/color-picker/index.html",
+      "destination": "/color-picker"
+  ],
+  "trailingSlash": false
+}
