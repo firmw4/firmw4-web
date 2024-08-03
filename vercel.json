@@ -4,12 +4,39 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/newb-x-pineapple/index.html",
+      "destination": "/newb-x-pineapple",
+      "permanent": true
+    },
+    {
+      "source": "/newb-x-pineapple/downloads/mediafire-2.0.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/newb-x-pineapple/downloads/linkvertise-2.0.html",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "rewrites": [
     {
       "source": "/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/newb-x-pineapple",
+      "destination": "/newb-x-pineapple/index.html"
+    },
+    {
+      "source": "/newb-x-pineapple/downloads",
+      "destination": "/newb-x-pineapple/downloads/mediafire-2.0.html"
+    },
+    {
+      "source": "/newb-x-pineapple/downloads",
+      "destination": "/newb-x-pineapple/downloads/linkvertise-2.0.html"
     }
   ]
 }
