@@ -1,114 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="author" content="firmw4">
-   <title>Firmw4</title>
-   
-   <link rel="stylesheet" href="style/style.css">
-   
-   <!-- fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
-   
-   <!-- favicon -->
-   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-   <link rel="manifest" href="site.webmanifest">
-   
-   <script src="/script/redirect.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Zakky Firmansyah Portfolio</title>
 </head>
 <body>
+  <div class="container">
+     <header>
+        <div class="profile">
+           <img src="img/profile.jpg" alt="zakky profile image">
+              <h1>Zakky Firmansyah</h1>
+        </div>
+        <nav>
+           <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#resume">RESUME</a></li>
+              <li><a href="#personal">PERSONAL</a></li>
+           </ul>
+        </nav>
+     </header>
 
-  <!-- header -->
-  <div class="header">
-    <div class="top">Firmw4</div>
-    
-    <div class="topnav">
-      <a href="#photos">Photography</a>
-      <a href="#projects">Projects</a>
-  </div>
-  </div>
-  
-  <!-- content -->
-  <p>
-     <div class="title">Zakky Firmansyah</div>
-     <div class="quote">Photographer and Programmer</div>
-  </p>
-  
-  <article>
-     <div class="container">
-       <div class="sub-container">
-        <p class="subtitle">About me</p>
-       </div>
-       <div class="sub-container">
-        <p class="text">I'm Zakky, a software engineering student and photography enthusiast<br>here you can see some of my projects and photos.</p>
-       </div>
-       <div class="sub-container">
+     <div class="slider">
+        <section id="home" class="slide fade-in">
+           <p>👋 Hi, I'm Zakky.</p>
+           <p>I'm a beginner frontend developer from Surabaya, Indonesia.
+               I'm a high school student who is learning web development and shader coding.
+               In my spare time I usually play games, watch anime, read comics, and create my own projects.</p>
+        </section>
+
+        <section id="projects" class="slide">
+           <p>Projects content goes here.</p>
+        </section>
+
+        <section id="resume" class="slide">
+           <p>Resume content goes here.</p>
+        </section>
+
+        <section id="personal" class="slide">
+           <p>Personal information goes here.</p>
+        </section>
+     </div>
+        
+     <footer>
         <div class="social">
-           <a href="/redirect/github.html"><img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Black/Github_black.svg" alt="Github" class="button-img"></a>
-           <a href="/redirect/facebook.html"><img src="https://github.com/gauravghongde/social-icons/raw/master/SVG/Black/Facebook_black.svg" alt="Facebook" class="button-img"></a>
-           <a href="/redirect/discord.html"><img src="https://github.com/gauravghongde/social-icons/raw/master/SVG/Black/Discord_black.svg" alt="Telegram" class="button-img"></a>
+           <ul>
+              <li><a href="https://github.com/firmw4/"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://instagram.com/firmw4"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/firmw4?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></li>
+           </ul>
          </div>
-       </div>
-      </div>
-  </article>
-  
-  <section id="photos">
-  <article>
-    <div class="container">
-      <div class="sub-container">
-        <p class="subtitle">Iguana</p>
-      </div>
-      <div class="img-container">
-        <div class="img-item">
-          <img src="images/sample_1.jpg" alt="Image 1">
-        </div>
-      </div>
-      <div class="img-container">
-        <div class="img-item">
-          <img src="images/sample_2.jpg" alt="Image 2">
-          </div>
-      </div>
-      <div class="img-container">
-        <div class="img-item">
-          <img src="images/sample_3.jpg" alt="Image 3">
-        </div>
-      </div>
-      <div class="img-container">
-        <div class="img-item">
-          <img src="images/sample_4.jpg" alt="Image 4">
-        </div>
-      </div>
-    </div>
-  </article>
-  </section>
-  
-  <section id="projects">
-  <article>
-    <div class="click-container" onclick="location.href='newb-x-pineapple/index.html'">
-      <div class="sub-container">
-        <p class="subtitle">Newb X Pineapple</p>
-      </div>
-      <div class="sub-container">
-        <p class="text">A Newb variant with a soft lighting, better and improved visuals to make it more aesthetic.</p>
-      </div>
-      <div class="img-container">
-        <img src="images/screenshots_nxp.jpg" alt="newb-x-pineapple">
-      </div>
-    </div>
-  </article>
-  
-  <!-- footer -->
-  <footer>
-    <p>Copyright &copy; 2024 Firmw4</p>
-  </footer>
-  
+     </footer>
+  </div>
+
+  <script src="script/script.js"></script>
 </body>
 </html>
