@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa;
+  padding-top: 56px;
+  padding-bottom: 40px;
+  height: 100vh;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.content,
+.content-box {
+  max-height: 500px;
+  max-width: 500px;
+  margin: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.content-box {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.content-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.content h5,
+.content-box h5 {
+  font-size: 24px;
+}
+
+.content a,
+.content p,
+.content-box p {
+  font-size: 18px;
+}
+
+.content-box h5,
+.content-box p {
+  color: #000;
+}
+
+.content img, 
+.content-box img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+footer {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6c757d;
+  height: 40px;
+  line-height: 40px;
+}
+
+.resolution-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resolution-input input {
+  width: 80px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
