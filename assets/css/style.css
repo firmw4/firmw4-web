@@ -1,0 +1,144 @@
+body {
+  background-color: #f8f9fa;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+mark {
+  background-color: rgba(100, 20, 140, 0.3);
+}
+
+small {
+  font-family: monospace;
+}
+
+.mb-4 img {
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+}
+
+.navbar-brand {
+  color: #333;
+}
+
+/* Overlay saat sidebar terbuka */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1049;
+}
+
+/* Tampilkan overlay saat sidebar terbuka */
+.sidebar.show + .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sidebar Style */
+.sidebar {
+  position: fixed;
+  left: -300px; /* Sidebar tersembunyi */
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background: #ffffff;
+  transition: left 0.3s ease-in-out;
+  z-index: 1050;
+  padding: 1em;
+}
+
+/* Sidebar Muncul */
+.sidebar.show {
+  left: 0;
+}
+
+/* Header Sidebar */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 5px;
+}
+
+.sidebar-header p {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Garis horizontal setelah sidebar header */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+/* Tombol Sidebar */
+.sidebar-toggler {
+  position: fixed;
+  background: white;
+  color: #bbb;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  z-index: 1100;
+}
+
+/* Hilangkan shadow saat fokus */
+.sidebar-toggler:focus,
+.close-sidebar:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Tombol Tutup Sidebar */
+.close-sidebar {
+  background: none;
+  color: #bbb;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Style menu sidebar */
+.nav-link {
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Tambahkan ikon di samping teks */
+.nav-link i {
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+
+/* Hover efek */
+.nav-link:hover,
+.nav-link:focus {
+  color: purple;
+}
+
+/* Aktif menu (tidak ada latar belakang) */
+.nav-link.active {
+  font-weight: bold;
+  color: purple;
+}
+
+.dropdown-menu {
+  border: none;
+}
