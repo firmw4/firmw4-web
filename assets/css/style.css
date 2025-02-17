@@ -142,3 +142,11 @@ hr {
 .dropdown-menu {
   border: none;
 }
+
+.section-page {
+  margin-top: 80vh;
+}
+
+.container {
+  max-width: 800px;
+}

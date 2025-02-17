@@ -33,16 +33,29 @@
 
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link" href="../index.html">
-          <i class="bi bi-house-door"></i> WIP
+        <a class="nav-link" href="../../index.html">
+          <i class="bi bi-house-door"></i> Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../index.html#projects">
+          <i class="bi bi-info-circle"></i> Projects
         </a>
       </li>
     </ul>
   </div>
 
+  <!-- Container Utama (Konten & Artikel) -->
+  <div class="container my-3 p-4 bg-white rounded">
+    <section class="top">
+      <h1 class="h1">Newb Constellation: Gemini</h1>
+    </section>
+  </div>
+
   <!-- Container Carousel -->
   <div class="container my-3 p-4 bg-white rounded">
     <div id="carouselExample" class="carousel slide rounded" data-bs-ride="carousel">
+      <h5>Screenshots</h5>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="../../assets/img/carousel1.jpg" class="d-block w-100" alt="Carousel Image 1">
@@ -60,17 +73,14 @@
           <img src="../../assets/img/carousel5.jpg" class="d-block w-100" alt="Carousel Image 5">
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/carousel6.jpg" class="d-block w-100" alt="Carousel Image 6">
+          <img src="../../assets/img/carousel6.jpg" class="d-block w-100" alt="Carousel Image 6">
         </div>
       </div>
     </div>
   </div>
-  
-  <!-- Container Utama (Konten & Artikel) -->
+
   <div class="container my-3 p-4 bg-white rounded">
-    <!-- 1. Konten Utama -->
     <section class="mb-4">
-      <h1 class="h1">Newb Constellation: Gemini</h1>
       <p>
         Another newb variant that improves Minecraft visual colors, calm tonemap, cozy night skies, and immersive environments.
       </p><br />
@@ -97,51 +107,50 @@
         if night too dark, just increase brightness settings <br />
         <small>don't expect smooth performance, i will release a lite version soon</small>
         </p><br />
-      
-      <section id="install">
-        <div class="col-md mb-3">
-          <div class="card">
-            <div class="card-body m-2">
-              <h5 class="card-title">Installation</h5>
-              <div class="container my-3 p-4 bg-light">
-                <h6 class="h6">NOTE</h6>
-                <p><small>Shaders are not officially supported on Minecraft Bedrock. The following are unofficial ways to load shaders.</small></p>
-              </div>
-              <p>
-                <b>Linux / Mac:</b> For <a href="https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html">mcpelauncher-manifest</a> only
+
+        <p class="d-inline-flex gap-1">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#install" aria-expanded="false" aria-controls="collapseExample">
+            Installation Guide
+          </button>
+        </p>
+
+        <div class="collapse" id="install">
+          <div class="col-md mb-3">
+            <div class="card">
+              <div class="card-body m-2">
+                <h5 class="card-title">Installation</h5>
+                <div class="container my-3 p-4 bg-light">
+                  <h6 class="h6">NOTE</h6>
+                  <p><small>Shaders are not officially supported on Minecraft Bedrock. The following are unofficial ways to load shaders.</small></p>
+                </div>
+                <p>
+                  <b>Linux / Mac:</b> For <a href="https://mcpelauncher.readthedocs.io/en/latest/getting_started/index.html">mcpelauncher-manifest</a> only
+                  <ol>
+                    <li>Download <a href="https://github.com/GameParrot/mcpelauncher-shadersmod/releases/latest">mcpelauncher-shadersmod</a>.</li>
+                    <li>Follow this <a href="https://faizul118.github.io/guides/shadersmodinstallation">guide</a> to setup.</li>
+                  </ol>
+                </p>
+                <p>
+                  <b>Windows: </b>
+                </p>
                 <ol>
-                  <li>Download <a href="https://github.com/GameParrot/mcpelauncher-shadersmod/releases/latest">mcpelauncher-shadersmod</a>.</li>
-                  <li>Follow this <a href="https://faizul118.github.io/guides/shadersmodinstallation">guide</a> to setup.</li>
-                </ol>
-              </p>
-              <p>
-                <b>Windows: </b>
-              </p>
-              <ol>
-                <li>Use <a href="https://github.com/ddf8196/BetterRenderDragon">BetterRenderDragon</a> to enable MaterialBinLoader. </li>
-                <li>Use <a href="https://github.com/faizul726/matject/">Matject</a>.</li>
-                <li>Manual Method. See this <a href="https://youtu.be/UL2c7Smc2VA">video</a>. <small>not recommended</small></li>
-                <li>Import the resource pack and activate it in global resources.</li>
-              </ol>
-              <p>
-                <b>Android:</b>
-                <ol>
-                  <li>Install <a href="https://devendrn.github.io/renderdragon-shaders/shaders/installation/android#using-patch-app">Patched Minecraft App</a></li>
+                  <li>Use <a href="https://github.com/ddf8196/BetterRenderDragon">BetterRenderDragon</a> to enable MaterialBinLoader. </li>
+                  <li>Use <a href="https://github.com/faizul726/matject/">Matject</a>.</li>
+                  <li>Manual Method. See this <a href="https://youtu.be/UL2c7Smc2VA">video</a>. <small>not recommended</small></li>
                   <li>Import the resource pack and activate it in global resources.</li>
                 </ol>
-              </p>
+                <p>
+                  <b>Android:</b>
+                  <ol>
+                    <li>Install <a href="https://devendrn.github.io/renderdragon-shaders/shaders/installation/android#using-patch-app">Patched Minecraft App</a></li>
+                    <li>Import the resource pack and activate it in global resources.</li>
+                  </ol>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section><br />
-      <h5 class="h5">Screenshots</h5>
-      <img src="../../assets/img/carousel1.jpg" class="d-block w-100"><br />
-      <img src="../../assets/img/carousel2.jpg" class="d-block w-100"><br />
-      <img src="../../assets/img/carousel3.jpg" class="d-block w-100"><br />
-      <img src="../../assets/img/carousel4.jpg" class="d-block w-100"><br />
-      <img src="../../assets/img/carousel5.jpg" class="d-block w-100"><br />
-      <img src="../../assets/img/carousel6.jpg" class="d-block w-100"><br />
-      <hr />
+        </div><br />
+
       <section id="download">
       <div class="row mt-3">
           <div class="col-md-6 mb-3">
@@ -178,9 +187,9 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Title</h5>
-              <p class="card-text">Deskripsi singkat mengenai artikel ini. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              <h5 class="card-title">Newb Pineapple 🍍</h5>
+              <p class="card-text">Another newb variants to improve your minecraft visual with bright lighting, low saturation, soft shadow, foggy environment and immersive bloom.</p>
+              <a href="#" class="btn btn-primary">Read more...</a>
             </div>
           </div>
         </div>
@@ -188,8 +197,8 @@
     </section>
   </div>
   
-  <!-- Container Footer (Fixed Bottom) -->
-  <div class="container mt-5 my-3 p-4 bg-white rounded">
+  <!-- Container Footer -->
+  <div class="container-fluid mt-5 my-3 p-4 bg-white rounded">
       <div class="row">
         <div class="col text-center">
           <a href="#" class="text-decoration-none me-3">Home</a>
@@ -200,8 +209,8 @@
       </div>
       <p class="text-center mt-2 mb-0">&copy; 2025 FIRMW4. All rights reserved.</p>
   </div>
-  
-  <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../../assets/js/bootstrap.min.js"></script>
   <script src="../../assets/js/script.js"></script>
 </body>
 </html>

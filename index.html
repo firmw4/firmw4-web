@@ -7,7 +7,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="text-center">
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -33,45 +33,73 @@
 
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link" href="../index.html">
+        <a class="nav-link" href="#">
           <i class="bi bi-house-door"></i> Home
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="bi bi-info-circle"></i> Project
+        <a class="nav-link" href="#projects">
+          <i class="bi bi-info-circle"></i> Projects
         </a>
       </li>
-      <li class="nav-item dropdown">
-        <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-info-circle"></i> Newb Variants</button>
-        <ul class="dropdown-menu ms-3">
-          <li><a class="dropdown-item" href="#">Newb Pineapple</a></li>
-          <li><a class="dropdown-item" href="#">Newb Constellation: Gemini</a></li>
-          <li><a class="dropdown-item" href="#">Newb X Renewed (EOL)</a></li>
-          <li><a class="dropdown-item" href="#">Newb X Gemini (EOL)</a></li>
-        </ul>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">
+          <i class="bi bi-info-circle"></i> About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">
+          <i class="bi bi-info-circle"></i> Contact
+        </a>
       </li>
     </ul>
   </div>
 
+  <p class="display-3">Hi, there 👋</p>
+  <p class="mt-3">Hello my name is Zakky Firmansyah, <br> this is my simple portfolio website.</p>
+
   <div class="container my-3 p-4 bg-white rounded">
-    WIP
+    <p>Welcome to my website, You can find out a little about me and the projects I'm working on.</p>
+    <a href="#projects" class="btn btn-success">Find out my projects</a>
   </div>
 
-  <!-- Container Footer (Fixed Bottom) -->
-  <div class="container mt-5 my-3 p-4 bg-white rounded">
+  <!-- Section Projects -->
+  <section id="projects">
+    <div class="container p-4 bg-white rounded section-page text-start">
+      <div class="row">
+        <h3>Newb Variants</h3>
+      </div>
+      <div class="row">
+        <p>Newb Variants is a <b>RenderDragon</b> successor to the legacy GLSL shader, Newb Shader. It is an enhanced vanilla shader that focuses on being lightweight and having soft aesthetics. It supports Minecraft Bedrock 1.21+ (Windows/Android/iOS).</p>
+        <a href="newb-variants/index.html" class="text-end">Read more...</a>
+      </div>
+    </div>
+
+    <div class="container mt-3 p-4 bg-white rounded text-start">
+      <div class="row">
+        <h3>Tools</h3>
+      </div>
+      <div class="row">
+        <p>Simple tools like UUID Generator, color picker and Minecraft manifest.json maker.</p>
+        <a href="tools/index.html" class="text-end">Read more...</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Container Footer -->
+  <div class="container-fluid mt-5 my-3 p-4 bg-white rounded">
       <div class="row">
         <div class="col text-center">
-          <a href="#" class="text-decoration-none me-3">Home</a>
-          <a href="#" class="text-decoration-none me-3">Projects</a>
-          <a href="#" class="text-decoration-none me-3">Newb Variants</a>
-          <a href="#" class="text-decoration-none me-3">About</a>
+          <a href="#projects" class="text-decoration-none me-3">Projects</a>
+          <a href="#about" class="text-decoration-none me-3">About</a>
+          <a href="#contact" class="text-decoration-none me-3">Contact</a>
+          <a href="https://github.com/firmw4" class="text-decoration-none me-3">Github</a>
         </div>
       </div>
       <p class="text-center mt-2 mb-0">&copy; 2025 FIRMW4. All rights reserved.</p>
   </div>
   
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
